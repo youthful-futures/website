@@ -175,21 +175,37 @@ def card(e, heading="h3"):
         </li>"""
 
 
+def node(e):
+    """One essay on the series timeline."""
+    return f"""<li class="node">
+          <a href="/writing/{e['slug']}/">
+            <span class="node__num">{e['num']:02d}</span>
+            <span class="node__text">
+              <h2 class="node__title">{inline(e['title'])}</h2>
+              <span class="node__dek">{inline(e['dek'])}</span>
+            </span>
+            <span class="node__meta">{minutes(e)} min</span>
+          </a>
+        </li>"""
+
+
 # ---------- Pages ----------
 
 def series_page(data):
     intro = "\n".join(f"        <p>{inline(p)}</p>" for p in data["intro"])
-    cards = "\n        ".join(card(e, "h2") for e in data["essays"])
-    body = f"""  <section class="block series-top" aria-labelledby="series-title">
+    nodes = "\n        ".join(node(e) for e in data["essays"])
+    body = f"""  <div class="rail">
+  <section class="block series-top" aria-labelledby="series-title">
     <div class="wrap">
       <p class="label">Writing · A 12-part series</p>
       <h1 id="series-title" class="lead">{SERIES}: growing up in a changing world.</h1>
       <p class="prose writing__intro">{inline(data['seo_desc'])}</p>
-      <ol class="essays">
-        {cards}
+      <ol class="timeline">
+        {nodes}
       </ol>
     </div>
   </section>
+  </div>
 
   <section class="series-about" aria-labelledby="about-series">
     <div class="wrap">
