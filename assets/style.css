@@ -1,7 +1,6 @@
 @font-face { font-family: Manrope; src: url(fonts/Manrope-Regular.ttf) format("truetype"); font-weight: 400; font-display: swap; }
 @font-face { font-family: Manrope; src: url(fonts/Manrope-SemiBold.ttf) format("truetype"); font-weight: 600; font-display: swap; }
 @font-face { font-family: Manrope; src: url(fonts/Manrope-Bold.ttf) format("truetype"); font-weight: 700; font-display: swap; }
-@font-face { font-family: "Bodoni Moda"; src: url(fonts/BodoniModa-Bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
 
 :root {
   --indigo: #29245C;
@@ -130,14 +129,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .voice h3 { font-size: 18px; margin-bottom: 8px; }
 .voice p { font-size: 15px; color: var(--indigo); }
 
-/* Partners */
-.partners { padding: 64px 0; border-bottom: 1px solid rgba(41,36,92,.12); }
-.partners .label { text-align: center; }
-.partners__row { display: flex; justify-content: center; flex-wrap: wrap; gap: 48px; }
-.partner { text-align: center; }
-.partner strong { display: block; font-size: 22px; color: var(--indigo); letter-spacing: -.01em; }
-.partner span { font-size: 14px; opacity: .7; }
-
 /* Work */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 12px; }
 .card { background: #fff; display: flex; flex-direction: column; }
@@ -151,13 +142,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .card__body h3 { margin-bottom: 10px; }
 .card__body p { font-size: 16px; }
 
-.wing { margin-top: 24px; background: var(--paper-2); display: grid; grid-template-columns: auto 1fr; gap: clamp(24px, 4vw, 56px); align-items: center; padding: clamp(28px, 4vw, 44px); }
-.wing__mark { display: flex; align-items: center; gap: 14px; color: var(--indigo); }
-.wing__art { font-family: "Bodoni Moda", Didot, "Bodoni 72", Georgia, serif; font-weight: 700; font-size: 56px; line-height: 1; color: var(--fuchsia); }
-.wing__x { font-size: 28px; color: var(--fuchsia); }
-.wing__yf { font-weight: 700; font-size: 17px; line-height: 1.1; letter-spacing: .03em; }
-.wing h3 { margin-bottom: 6px; }
-.wing p { max-width: 60ch; }
 
 /* Connect */
 .split--connect { align-items: end; }
@@ -216,8 +200,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   .hero__art { width: 100%; }
   .hero { align-items: flex-end; padding-top: 55vw; }
   .about__visual { aspect-ratio: 16 / 11; }
-  .wing { grid-template-columns: 1fr; }
-  .rail::before, .block::before { display: none; }
+    .rail::before, .block::before { display: none; }
 }
 @media (max-width: 560px) {
   .nav__links { display: none; }

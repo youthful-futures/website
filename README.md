@@ -12,4 +12,7 @@ Privacy by design: no cookies, analytics, forms or third-party requests; all fon
 
 To do later:
 - **People**: the section was removed for now. Its styles are still in `assets/style.css` (`.team`, `.person`) for when it returns.
+- **Art × Youthful Futures / Tvarita**: removed for now; add back to Our work (and a Partners row) when ready. Bodoni Moda would need self-hosting again.
 - **Legal details**: add the organisation's legal name and address to `privacy.html` and a governing-law clause to `terms.html` once established (see the HTML comments).
+
+Security: every page sets a strict Content Security Policy (self-only, no inline scripts or styles) and no-referrer. Keep JavaScript in `assets/main.js` and avoid inline `style=` attributes, or the policy will block them. Contact for security reports: `/.well-known/security.txt`.
