@@ -6,6 +6,8 @@ Single-page landing site. Static HTML/CSS, no dependencies.
 - Styles: `assets/style.css` (brand colours and Manrope from the identity kit).
 - Preview: `python3 -m http.server` and open http://localhost:8000.
 
+Writing: the 12-essay *Youthful Futures* series lives in `content/youthful-futures-series.md` (edited copy of the hand-off). `python3 build.py` regenerates `writing/` (series page + one page per essay, footnotes, related links, previous/next), the home page's latest-essays cards and `sitemap.xml`. Edit the Markdown, never the generated HTML. No byline or dates yet (add in `build_writing.py` when confirmed).
+
 Pages: `index.html` (built), `privacy.html`, `terms.html`, `404.html`. Hosted on GitHub Pages at youthfulfutures.org (`CNAME`).
 
 Privacy by design: no cookies, analytics, forms or third-party requests; all fonts are self-hosted. If you add any of these, update `privacy.html` first.
