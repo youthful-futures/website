@@ -193,12 +193,13 @@ ul { list-style: none; margin: 0; padding: 0; }
 .writing__all:hover { text-decoration: underline; }
 
 /* Writing: series page */
-.series-hero { background: var(--indigo); color: #FCF9F3; padding: clamp(64px, 9vw, 112px) 0 clamp(48px, 7vw, 80px); }
-.series-hero h1 { color: #FCF9F3; font-size: clamp(44px, 7vw, 88px); letter-spacing: -0.03em; }
-.series-hero__standfirst { margin-top: 24px; font-size: clamp(20px, 2.2vw, 28px); line-height: 1.35; font-weight: 600; max-width: 32ch; color: var(--marigold); }
-.series-hero .label a, .essay-head .label a { color: inherit; text-decoration: none; }
-.series-intro { padding: clamp(48px, 7vw, 88px) 0 24px; }
-.series-list { padding: 24px 0 var(--section); }
+.series-top { padding-top: clamp(56px, 7vw, 88px); }
+.series-top h1.lead { font-size: clamp(30px, 3.6vw, 44px); }
+.series-about { background: var(--indigo); color: #FCF9F3; padding: var(--section) 0; }
+.series-about__standfirst { font-size: clamp(24px, 2.8vw, 34px); line-height: 1.3; font-weight: 700; max-width: 30ch; color: var(--marigold); margin-bottom: 36px; }
+.series-about .prose--article { color: #FCF9F3; opacity: .92; }
+.series-about .prose--article strong { color: #FCF9F3; }
+.essay-head .label a { color: inherit; text-decoration: none; }
 
 /* Writing: essay page */
 .essay-head { background: var(--indigo); color: #FCF9F3; padding: clamp(56px, 8vw, 104px) 0 clamp(40px, 6vw, 72px); }
@@ -273,3 +274,4 @@ ul { list-style: none; margin: 0; padding: 0; }
   .footer__tag { margin-left: 0; }
 }
 .person__photo[style*="paper-2"] span, .person__photo[style*="celadon"] span { color: rgba(41,36,92,.3); }
+.series-top::before { display: none; }

@@ -180,27 +180,24 @@ def card(e, heading="h3"):
 def series_page(data):
     intro = "\n".join(f"        <p>{inline(p)}</p>" for p in data["intro"])
     cards = "\n        ".join(card(e, "h2") for e in data["essays"])
-    body = f"""  <section class="series-hero">
+    body = f"""  <section class="block series-top" aria-labelledby="series-title">
     <div class="wrap">
-      <p class="label label--celadon">Writing · A 12-part series</p>
-      <h1>{SERIES}</h1>
-      <p class="series-hero__standfirst">{inline(data['standfirst'])}</p>
-    </div>
-  </section>
-
-  <section class="series-intro">
-    <div class="wrap">
-      <div class="prose prose--article">
-{intro}
-      </div>
-    </div>
-  </section>
-
-  <section class="series-list" aria-label="Essays in the series">
-    <div class="wrap">
+      <p class="label">Writing · A 12-part series</p>
+      <h1 id="series-title" class="lead">{SERIES}: growing up in a changing world.</h1>
+      <p class="prose writing__intro">{inline(data['seo_desc'])}</p>
       <ol class="essays">
         {cards}
       </ol>
+    </div>
+  </section>
+
+  <section class="series-about" aria-labelledby="about-series">
+    <div class="wrap">
+      <p class="label label--celadon" id="about-series">About the series</p>
+      <p class="series-about__standfirst">{inline(data['standfirst'])}</p>
+      <div class="prose prose--article">
+{intro}
+      </div>
     </div>
   </section>"""
     return page(data["seo_title"], data["seo_desc"], "/writing/", body)
