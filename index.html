@@ -9,15 +9,14 @@
 <meta property="og:title" content="Youthful Futures">
 <meta property="og:description" content="Every young person deserves the confidence and capability to shape their own future.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/img/04-First-post-1200x627.png">
+<meta property="og:image" content="https://youthfulfutures.org/assets/img/04-First-post-1200x627.png">
+<meta property="og:url" content="https://youthfulfutures.org/">
+<link rel="canonical" href="https://youthfulfutures.org/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/Manrope-Bold.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -32,7 +31,6 @@
     <nav aria-label="Primary">
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#people">People</a></li>
         <li><a href="#work">Our work</a></li>
         <li><a href="#connect">Connect</a></li>
       </ul>
@@ -81,66 +79,6 @@
       <div class="wrap">
         <p class="label label--celadon">Our vision</p>
         <h2 id="vision-title">A world in which every young person can <em>learn</em>, <em>choose</em> and <em>create</em> a livelihood, wherever they start.</h2>
-      </div>
-    </section>
-
-    <!-- PEOPLE -->
-    <section class="block people" id="people" aria-labelledby="people-title">
-      <div class="wrap">
-        <p class="label">People</p>
-        <h2 id="people-title" class="lead">Shaped by the people in it.</h2>
-        <p class="prose people__intro">Youthful Futures is a shared effort. Young people set the direction, and a community of educators, artists, practitioners and advisors helps create the conditions for them to learn, make and act.</p>
-
-        <!--
-          TEAM: replace each placeholder card with a real person.
-          Use a consented photo at assets/img/people/<name>.jpg (4:5),
-          set the name, role and profile link, and remove class "is-placeholder".
-        -->
-        <ul class="team">
-          <li class="person is-placeholder">
-            <div class="person__photo" style="--tile: var(--indigo)"><span>YF</span></div>
-            <h3>Name</h3>
-            <p class="person__role">Founder</p>
-            <a class="person__link" href="#">LinkedIn →</a>
-          </li>
-          <li class="person is-placeholder">
-            <div class="person__photo" style="--tile: var(--fuchsia)"><span>YF</span></div>
-            <h3>Name</h3>
-            <p class="person__role">Role</p>
-            <a class="person__link" href="#">LinkedIn →</a>
-          </li>
-          <li class="person is-placeholder">
-            <div class="person__photo" style="--tile: var(--paper-2)"><span>YF</span></div>
-            <h3>Name</h3>
-            <p class="person__role">Advisor</p>
-            <a class="person__link" href="#">LinkedIn →</a>
-          </li>
-          <li class="person is-placeholder">
-            <div class="person__photo" style="--tile: var(--celadon)"><span>YF</span></div>
-            <h3>Name</h3>
-            <p class="person__role">Advisor</p>
-            <a class="person__link" href="#">LinkedIn →</a>
-          </li>
-        </ul>
-
-        <div class="voices">
-          <div class="voice">
-            <h3>Young people</h3>
-            <p>Their questions, goals and ambitions set the direction. They help define what progress means and decide how their stories are told.</p>
-          </div>
-          <div class="voice">
-            <h3>Educators &amp; communities</h3>
-            <p>Local knowledge, facilitation and relationships that connect learning to real tasks and local priorities.</p>
-          </div>
-          <div class="voice">
-            <h3>Artists &amp; makers</h3>
-            <p>Traditional and folk artists exploring new tools on their own terms, and sharing craft across generations.</p>
-          </div>
-          <div class="voice">
-            <h3>Partners &amp; funders</h3>
-            <p>Mentoring, access, materials and funding that open routes to opportunity.</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -207,8 +145,7 @@
         <div class="connect__box">
           <p class="connect__q">What is one thing you would love to learn or make?</p>
           <p class="connect__write">Write to us:
-            <!-- Add the approved contact address here -->
-            <span class="connect__email">Contact details coming soon</span>
+            <a class="connect__email" href="mailto:contact@youthfulfutures.org">contact@youthfulfutures.org</a>
           </p>
         </div>
       </div>
@@ -221,6 +158,11 @@
   <div class="wrap footer__grid">
     <img src="assets/img/wordmark-stacked-reverse.svg" alt="Youthful Futures" width="150" height="69">
     <p class="footer__tag">Your future. In your hands.</p>
+    <nav class="footer__links" aria-label="Legal">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:contact@youthfulfutures.org">Contact</a>
+    </nav>
     <p class="footer__small">© 2026 Youthful Futures</p>
   </div>
 </footer>
